@@ -1,0 +1,35 @@
+// contenedor es el elemento que contiene todo lo relevante de una manera sencilla
+// cantidad total, cantidad a calcular, porcentaje y el boton calcular
+
+.contenedor {
+    h2 {
+        font-size: 2rem;
+    }
+
+    div {
+        margin-bottom: 15px;
+    }
+
+    label {
+       display: block;
+       font-size: 1.8rem;
+    }
+
+    input {
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    .porcentaje-input {
+        span {
+            font-size: 1.8rem;
+        }
+
+        display: flex;
+        align-items: center;
+    }
+
+    .porcentaje-input span {
+        margin-left: 5px;
+    }
+}
