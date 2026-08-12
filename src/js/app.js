@@ -13,17 +13,17 @@ function calcular(){
     if (cantidad_total && cantidad_a_calcular) {
         // calcular el porcentaje
         const resultado = (cantidad_a_calcular / cantidad_total) * 100;
-        document.getElementById("porcentaje").value = resultado;
+        document.getElementById("porcentaje").value = Number(resultado.toFixed(2));
 
     }  else if (cantidad_total && porcentaje) {
         // calcular cantidad a calcular
         const resultado = cantidad_total * porcentaje / 100;
-        document.getElementById("cantidad_a_calcular").value = resultado;
+        document.getElementById("cantidad_a_calcular").value = Number(resultado.toFixed(2));
 
     } else if (cantidad_a_calcular && porcentaje) {
         // calcular la cantidad total
         const resultado = cantidad_a_calcular * 100 / porcentaje;
-        document.getElementById("cantidad_total").value = resultado;
+        document.getElementById("cantidad_total").value = Number(resultado.toFixed(2));
     }
 
 
@@ -35,7 +35,6 @@ function calcular(){
         `${porcentaje}% de ${cantidad} = ${resultado}`;
         */
 
-    console.log('se pulso el boton calcular');
     console.log(`El porcentaje es ${porcentaje_resultado}%`);
 }
 
