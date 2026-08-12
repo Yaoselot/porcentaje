@@ -2,9 +2,12 @@ import { defineConfig } from 'vite'
 import { exec } from 'child_process'
 
 export default defineConfig({
+  base: '/porcentaje/',
+
   server: {
     open: false
   },
+  
   plugins: [
     {
       name: 'open-chrome-new-window',
